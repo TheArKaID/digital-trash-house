@@ -9,6 +9,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
         "laravel/tinker": "^2.7",
+        "laravel/ui": "^4.2",
         "livewire/livewire": "^3.0@beta"
     },
     "require-dev": {
