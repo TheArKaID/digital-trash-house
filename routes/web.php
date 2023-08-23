@@ -16,10 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.beranda');
 });
 Auth::routes(['register' => false]);
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('home');
+});
+
+Route::get('/hello-world', function () {
+    return "Hello World";
 });
