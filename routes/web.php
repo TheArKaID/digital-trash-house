@@ -24,6 +24,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('home');
 });
 
+Route::get('/say-hi', function ($id) {
+    return "Hi {$id}";
+});
+
 Route::get('/hello-world', function () {
     return "Hello World";
 });
