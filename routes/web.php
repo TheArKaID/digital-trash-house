@@ -23,3 +23,7 @@ Auth::routes(['register' => false]);
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('home');
 });
+
+Route::get('/say-hi', function ($id) {
+    return "Hi {$id}";
+});
